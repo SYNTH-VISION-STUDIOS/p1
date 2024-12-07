@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Zoo - Nyeleneh</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="crazy-navbar">
+        <h1 class="logo">😂 MEME ZOO 🤡</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">🔥 Home</a></li>
+                <li><a href="#memes">🎭 Memes</a></li>
+                <li><a href="#about">🤪 About</a></li>
+                <li><a href="#tokenomics">💰 Tokenomics</a></li>
+                <li><a href="#roadmap">🗺️ Roadmap</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h2 class="crazy-text">SELAMAT DATANG DI HUTAN MEME! 😜</h2>
+            <p>Hanya untuk mereka yang kuat mental! 💥</p>
+        </div>
+    </section>
+
+    <section id="memes" class="meme-gallery">
+        <h2 class="crazy-title">💣 MEME TERMELEDAK 💣</h2>
+        <div class="meme-grid">
+            <!-- Meme Cards -->
+            <div class="meme crazy-border">
+                <div class="meme-images">
+                    <img src="https://imotorbike-wp-media.s3.ap-southeast-1.amazonaws.com/2023/11/Kucing-Meme-senyum-gigi-1024x1024.png" alt="Meme 1">
+                    <img src="https://imotorbike-wp-media.s3.ap-southeast-1.amazonaws.com/2023/11/Kucing-Meme-senyum-gigi-1-1024x1024.png" alt="Meme 2">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMiaAMKbvgJ4zJPaJU8ShI47-DfzxhypsIQlivj73GrubPcBupKZAJTA4BN6MUz7fzAEg&usqp=CAU" alt="Meme 3">
+                </div>
+                <p class="crazy-caption">Kalau lihat ini, langsung ngakak! 😂</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="tokenomics" class="info-section">
+        <h2>TOKENOMICS</h2>
+        <p>Token Name = $JUCE</p>
+        <p>TICKER = $JUCE</p>
+        <p>TOTAL SUPPLY = 1,000,000,000</p>
+        <p>LIQUIDITY POOL BURNED = 100%</p>
+        <p>TAXES = 0%</p>
+    </section>
+
+    <section id="roadmap" class="info-section">
+        <h2>ROADMAP</h2>
+        <p>1. Define Goals and Objectives</p>
+        <p>2. Identify Steps and Phases</p>
+        <p>3. Schedule Tasks and Phases</p>
+        <p>4. Allocate Resources</p>
+        <p>5. Choose Roadmap Format</p>
+    </section>
+
+    <section id="about" class="about-section">
+        <h2>About Us</h2>
+        <p>Kami membuat dunia lebih bahagia melalui MEME! 🎉</p>
+    </section>
+
+    <section id="socials" class="social-section">
+        <h2>Follow Us</h2>
+        <div class="social-icons">
+            <a href="#"><img src="https://www.freepnglogos.com/uploads/twitter-x-logo-png/twitter-x-logo-png-9.png" width="70px"></a>
+            <a href="#"><img src="https://logodownload.org/wp-content/uploads/2017/11/telegram-logo-8.png" width="70px"></a>
+            <a href="#"><img src="https://static.vecteezy.com/system/resources/previews/021/819/342/non_2x/fun-green-pill-free-png.png" width="70px"></a>
+        </div>
+    </section>
+
+    <section id="copy-text-section" class="copy-section">
+        <p id="copy-text">CA XXXXXXXXXXXXXXXXXXXX</p>
+        <button id="copy-button">Salin Teks</button>
+    </section>
+
+    <footer class="crazy-footer">
+        <p>&copy; 2024 Meme Zoo. Ketawa terus sampai besok! 😜</p>
+    </footer>
+
+    <script>
+        // Salin teks ke clipboard
+        document.getElementById("copy-button").addEventListener("click", function () {
+            const textToCopy = document.getElementById("copy-text").innerText;
+            navigator.clipboard.writeText(textToCopy).then(() => {
+                alert("Teks berhasil disalin!");
+            }).catch(() => {
+                alert("Gagal menyalin teks.");
+            });
+        });
+    </script>
+</body>
+</html>
